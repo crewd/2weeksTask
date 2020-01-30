@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>하이</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+    <header class="first-img back-img">
+        <a href='javascript:window.scroll(0, getOffsetTop(document.getElementById("umaru")));' class="start-btn">START</a>
+    </header>
+
+    <nav id="nav">
+        <ul>
+                <a href="" class="top-page">건어물 여동생! 우마루짱</a>
+                <div class="button-div" onclick="menu_button()">
+                    <input type="checkbox" id="menu-button">
+                    <label for="menu-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>    
+            
+            
+            <div class="menu">
+                <li><a href="" >우마루</a></li>
+                <li><a href="">menu2</a></li>
+                <li><a href="">menu3</a></li>
+                <li><a href="">menu4</a></li>
+            </div>
+
+        </ul>
+    </nav>
+
+    <div id="umaru" class="second-img back-img"></div>
+    <div class="icon-div"></div>
+    <div class=""></div>
+    <div class=""></div>
+
+    <script>
+
+        window.onscroll = function () {
+            var navScroll = window.scrollY;
+            var nav = document.getElementById("nav");
+            if (navScroll > 100) {
+                nav.style.backgroundColor = '#ffffff';
+            }
+            else {
+                nav.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+            }
+
+        };
+
+        function menu_button() {
+            var btn = document.getElementById("menu-button");
+
+            
+            if (btn.checked) {
+                document.getElementsByClassName("menu")[0].style.maxHeight = "300px";
+            } 
+            else if(!btn.checked) {
+                document.getElementsByClassName("menu")[0].style.maxHeight = "0";
+            }
+        };
+
+        window.menu_button();
+
+        function getOffsetTop(el) {
+            var top = 0;
+            if (el.offsetParent) {
+                do {
+                    top += el.offsetTop;
+                } while (el = el.offsetParent);
+                return [top];
+            }
+        }
+
+       
+
+    </script>
+</body>
+
+</html>
