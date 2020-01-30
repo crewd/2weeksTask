@@ -49,11 +49,13 @@
         window.onscroll = function () {
             var navScroll = window.scrollY;
             var nav = document.getElementById("nav");
-            if (navScroll > 100) {
-                nav.style.backgroundColor = '#ffffff';
-            }
-            else {
-                nav.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+            if(window.outerWidth > 1024){
+                if (navScroll > 100) {
+                    nav.style.backgroundColor = '#ffffff';
+                }
+                else {
+                    nav.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+                }
             }
 
         };
