@@ -12,13 +12,13 @@
 </head>
 
 <body>
-    <header class="first-img back-img">
+    <header class="first-img back-img" id="top">
         <a href='javascript:window.scroll(0, getOffsetTop(document.getElementById("umaru")));' class="start-btn">START</a>
     </header>
 
     <nav id="nav">
         <ul>
-                <a href="" class="top-page">건어물 여동생! 우마루짱</a>
+                <a href='javascript:window.scroll(0, getOffsetTop(document.getElementById("top")));' class="top-page">건어물 여동생! 우마루짱</a>
                 <div class="button-div" onclick="menu_button()">
                     <input type="checkbox" id="menu-button">
                     <label for="menu-button">
@@ -30,8 +30,8 @@
             
             
             <div class="menu">
-                <li><a href="" >우마루</a></li>
-                <li><a href="">menu2</a></li>
+                <li><a href='javascript:window.scroll(0, getOffsetTop(document.getElementById("umaru")));' >우마루</a></li>
+                <li><a href='javascript:window.scroll(0, getOffsetTop(document.getElementById("character")));'>캐릭터 소개</a></li>
                 <li><a href="">menu3</a></li>
                 <li><a href="">menu4</a></li>
             </div>
@@ -39,8 +39,35 @@
         </ul>
     </nav>
 
-    <div id="umaru" class="second-img back-img"></div>
-    <div class="icon-div"></div>
+    <div id="umaru" class="second-img back-img">
+        <h1>건어물 여동생! 우마루짱</h1>
+        <hr class="under-hr">
+    </div>
+    <a href="" id="character"></a>
+    <div class="character-div">
+        <h1>건어물 여동생! 우마루짱</h1>
+        <hr class="under-hr">
+        <div class="character">
+            <img src="img/first-icon.png" alt="">
+            <h2>도마 우마루</h2>
+            <p>성우: 타나카 아이미</p>
+        </div>
+        <div class="character">
+            <img src="img/second-icon.png" alt="">
+            <h2>에비나 나나</h2>
+            <p>성우: 카게야마 아카리</p>
+        </div>
+        <div class="character">
+            <img src="img/third-icon.png" alt="">
+            <h2>모토바 키리에</h2>
+            <p>성우: 시라이시 하루카</p>
+        </div>
+        <div class="character">
+            <img src="img/fourth-icon.png" alt="">
+            <h2>타치바나 실핀포드</h2>
+            <p>성우: 후루카와 유리나</p>
+        </div>
+    </div>
     <div class=""></div>
     <div class=""></div>
 
@@ -56,6 +83,14 @@
                 else {
                     nav.style.backgroundColor = 'rgba(0, 0, 0, 0)';
                 }
+            }
+
+            if (navScroll > 100) {
+                nav.style.boxShadow = "0 5px 15px rgba(0,0,0, .15)"
+            }
+
+            else {
+                nav.style.boxShadow = "0 0"
             }
 
         };
@@ -75,7 +110,7 @@
         window.menu_button();
 
         function getOffsetTop(el) {
-            var top = 0;
+            var top = -50;
             if (el.offsetParent) {
                 do {
                     top += el.offsetTop;
