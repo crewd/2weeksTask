@@ -22,3 +22,6 @@
 >2. 부모요소에 text-align : center와 display : inline-block을 부여하고 자식에 float:left를 주면 한줄로 가운데 정렬이 됨
 >3. text-shadow를 사용하여 글자 외곽선 추가 
 >4. hr태그 두께 조절시 border 값을 0으로 하고 height값으로 두깨 조정
+
+## Day-6
+>1. 

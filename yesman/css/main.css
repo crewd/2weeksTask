@@ -48,7 +48,6 @@ li {
     .character-div {
         background-color: #ffffff;
         max-width: 100%;
-        height: 200px;
         padding: 80px 50px 80px 50px;
         text-align: center;
         display: inline-block;
@@ -71,6 +70,12 @@ li {
     .character {
         float: left;
         padding: 40px;
+
+    }
+
+    .album img {
+        width: calc(100% / 3);  
+        height: auto;
     }
 
 }
@@ -120,6 +125,11 @@ li {
     .character {
         float: left;
         padding: 20px;
+    }
+
+    .album img {
+        width: calc(100% / 3);  
+        height: auto;
     }
 
 }
@@ -232,6 +242,11 @@ li {
         float: none;
     } 
 
+
+    .album img {
+        width: calc(100% / 2);  
+        height: auto;
+    }
     
 }
 
@@ -330,6 +345,11 @@ li {
     }
 
     .character { padding: 20px; }
+
+    .album img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 
@@ -389,7 +409,21 @@ li {
 }
 
 nav a {	
-    text-shadow: -2px 0 #fff, 0 2px #fff, 2px 0 #fff, 0 -2px #fff;
+    text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
     color: #f54b92;
+}
+
+.character-div { height: auto; }
+
+.album {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.album img {
+    display: block;
+    float: left;
 }
 
