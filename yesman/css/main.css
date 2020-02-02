@@ -78,6 +78,60 @@ li {
         height: auto;
     }
 
+    .color-overlay { width: calc(100%/3); }
+
+    .content-1 {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-2 {
+        top: 0;
+        bottom: 0;
+        left: calc(100%/3);
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-3 {
+        top: 0;
+        bottom: 0;
+        left: 66.6%;
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-4 {
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-5 {
+        top: 50%;
+        bottom: 0;
+        left: calc(100%/3);
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-6 {
+        top: 50%;
+        bottom: 0;
+        left: 66.6%;
+        right: 0;
+        height: 50%;
+    }
+
+    .phone-wrapper, .email-wrapper {
+        display: inline-block;
+    }
+
 }
 
 @media (min-width: 1025px) and (max-width: 1599px) {
@@ -130,6 +184,108 @@ li {
     .album img {
         width: calc(100% / 3);  
         height: auto;
+    }
+
+    .content-1 {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-2 {
+        top: 0;
+        bottom: 0;
+        left: calc(100%/3);
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-3 {
+        top: 0;
+        bottom: 0;
+        left: 66.6%;
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-4 {
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-5 {
+        top: 50%;
+        bottom: 0;
+        left: calc(100%/3);
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-6 {
+        top: 50%;
+        bottom: 0;
+        left: 66.6%;
+        right: 0;
+        height: 50%;
+    }
+
+    .color-overlay { width: calc(100%/3); }
+
+    .content-1 {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-2 {
+        top: 0;
+        bottom: 0;
+        left: calc(100%/3);
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-3 {
+        top: 0;
+        bottom: 0;
+        left: 66.6%;
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-4 {
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-5 {
+        top: 50%;
+        bottom: 0;
+        left: calc(100%/3);
+        right: 0;
+        height: 50%;
+    }
+    
+    .content-6 {
+        top: 50%;
+        bottom: 0;
+        left: 66.6%;
+        right: 0;
+        height: 50%;
+    }
+
+    .phone-wrapper, .email-wrapper {
+        display: inline-block;
     }
 
 }
@@ -247,6 +403,53 @@ li {
         width: calc(100% / 2);  
         height: auto;
     }
+
+    .color-overlay { 
+        width: 50%; 
+        height: calc(100%/3);
+    }
+
+    .content-1 {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .content-2 {
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        right: 0;
+    }
+    
+    .content-3 {
+        top: calc(100%/3);
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .content-4 {
+        top: calc(100%/3);
+        bottom: 0;
+        left: 50%;
+        right: 0;
+    }
+    
+    .content-5 {
+        top: calc(100% * 2/3);
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .content-6 {
+        top: calc(100% * 2/3);
+        bottom: 0;
+        left: 50%;
+        right: 0;
+    }
     
 }
 
@@ -350,6 +553,54 @@ li {
         width: 100%;
         height: auto;
     }
+
+    .color-overlay { 
+        width: 100% ;
+        height: calc(100%/6);
+    }
+
+    .content-1 {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .content-2 {
+        top: calc(100%/6);
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .content-3 {
+        top: calc(100%/3);
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .content-4 {
+        top: 50%;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .content-5 {
+        top: calc(100% * 2/3);
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .content-6 {
+        top: calc(100% * 5/6);
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
 }
 
 
@@ -417,13 +668,98 @@ nav a {
 
 .album {
     width: 100%;
-    height: auto;
     padding: 0;
     margin: 0;
+    height: auto;
+    float: left;
+    position: relative;
 }
 
 .album img {
-    display: block;
     float: left;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.color-overlay {
+    position: absolute;
+    background-color: rgb(247, 173, 36);
+    opacity: 0;
+    transition: .5s ease;
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.overlay-text {
+    margin: 50% 0;
+}
+
+
+.book-wrapper:hover .color-overlay {
+    opacity: .9;
+}
+
+.download {
+    width: 100%;
+    background-color: #2f2361;
+    float: left;
+    padding: 128px 0 192px 0;
+    position: relative;
+    color: #fff;
+}
+
+.git-btn {
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 21px;
+    line-height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    background-color: #4b81f5;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: bold;
+    border: 3px solid #fff;
+    box-shadow:inset -8px -8px rgba(35, 79, 136, 0.5);
+}
+
+.call {
+    width: 100%;
+    display: block;
+    padding: 128px 0;
+    float: left;
+    text-align: center;
+    position: relative;
+    background-color: #fff;
+}
+
+.under-hr2 {
+    border: 0;
+    height: 5px;
+    max-width: 50px;
+    background-color: #ff693b;
+}
+
+.phone-wrapper, .email-wrapper {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.phone, .email {
+    padding: 30px;
+}
+
+footer {
+    padding: 48px 0;
+    background-color: #ececec;
+    height: auto;
+    clear: both;
 }
 
